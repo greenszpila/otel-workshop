@@ -36,9 +36,9 @@ git clone https://github.com/newrelic-experimental/otel-workshop.git
 export OTEL_EXPORTER_OTLP_ENDPOINT=https://otlp.nr-data.net:4317
 export OTEL_EXPORTER_OTLP_METRICS_ENDPOINT=https://otlp.nr-data.net:4317
 export OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=https://otlp.nr-data.net:4317
-export OTEL_EXPORTER_OTLP_HEADERS=api-key=<NEWRELIC_INGEST_LICENSE_KEY>
-export NEW_RELIC_API_KEY=<NEWRELIC_INGEST_LICENSE_KEY>
-export NEW_RELIC_LICENSE_KEY=<NEWRELIC_INGEST_LICENSE_KEY>
+export OTEL_EXPORTER_OTLP_HEADERS=api-key=$NEW_RELIC_LICENSE_KEY
+export NEW_RELIC_API_KEY=$NEW_RELIC_LICENSE_KEY
+export NEW_RELIC_LICENSE_KEY=$NEW_RELIC_LICENSE_KEY
 export NEW_RELIC_HOST=collector.newrelic.com
 ```
 
